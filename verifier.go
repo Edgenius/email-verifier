@@ -4,14 +4,11 @@ import (
 	"bufio"
 	"fmt"
 	"os"
-	"path/filepath"
-	"runtime"
 	"time"
 )
 
 var (
-	_, b, _, _ = runtime.Caller(0)
-	basePath   = filepath.Dir(b)
+	basePath   = "."
 )
 
 // Verifier is an email verifier. Create one by calling NewVerifier
